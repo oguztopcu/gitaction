@@ -1,0 +1,14 @@
+{
+    "name": "oguztopcu/gitaction",
+    "type": "project",
+    "license": "MIT",
+    "description": "Testing for github actions",
+    "authors": [
+        {
+            "name": "Oguz Topcu",
+            "email": "oguztopcu7@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
