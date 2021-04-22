@@ -23,3 +23,11 @@ jobs:
 
     - name: 'Composer Install'
       run: composer install
+
+    - name: ssh deploy
+      uses: easingthemes/ssh-deploy@v2
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH }}
+        REMOTE_HOST: ${{ secrets.SERVER_IP }}
+        REMOTE_USER: ${{ secrets.SERVER_USER }}
+        TARGET: ${{ secrets.DEPLOY_PATH }}
