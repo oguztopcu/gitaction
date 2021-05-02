@@ -17,6 +17,7 @@ try {
 	}
 
 	echo '<h1>Hello, GitActions!</h1>';
+	echo '<h2>Deploy to server test</h2>';
 
 	echo '<ul>';
 	foreach (json_decode($response->getBody()->getContents()) as $item) {
