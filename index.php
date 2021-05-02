@@ -16,6 +16,8 @@ try {
 		throw new \RuntimeErrorException('Try to jsonplaceholder not respond');
 	}
 
+	echo '<h1>Hello, GitActions!</h1>';
+
 	echo '<ul>';
 	foreach (json_decode($response->getBody()->getContents()) as $item) {
 		echo "<li><a href=\"{$item->id}\">{$item->title}</a></li>";
